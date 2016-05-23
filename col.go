@@ -17,7 +17,7 @@ func main() {
 	}
 	if fi.Size() > 0 {
 		bytes, _ := ioutil.ReadAll(os.Stdin)
-		colnum, _ := strconv.ParseInt(os.Args[0], 16, 32)
+		colnum, _ := strconv.ParseInt(os.Args[1], 0, 32)
 		colFrom(string(bytes), colnum)
 	} else {
 		fmt.Println("| col [column-number]")
